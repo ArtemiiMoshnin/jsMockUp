@@ -1,0 +1,290 @@
+.header-block {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.header-block__container {
+    display: flex;
+    max-width: 1120px; 
+    background-image: linear-gradient(#F8F8F8, #FFFFFF);  
+}
+
+.header-block__text {
+    padding: 16px 0 16px 2.86%;
+    margin: 0;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;  
+}
+.main-block {
+    background-color: #F8F8F8;
+    max-width: 1120px; 
+    min-height: 154px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-block__nav {
+    max-width: 1056px;
+}
+
+.main-block__ul {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 0;
+    padding: 24px 0 24px 0;
+}
+    
+    
+.main-ul__li {
+    background-color: #FFFFFF;
+    list-style-type: none;
+    display: flex;
+    max-width: 240px;
+    width: 100%;
+    height: 72px;
+    margin-bottom: 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-right: 3.03%;
+}
+
+.hide{
+    display: none;
+    
+}
+    
+.main-ul__li:nth-child(4n) {
+    margin: 0;
+}
+.main-ul__li:last-child{
+    margin-right: 0;
+}
+
+.main-block__link {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 16px;
+}
+    
+.main-ul__go {
+    background-image: url(Images/go.svg);
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+}
+
+.main-ul__img-one {
+    background-image: url(Images/lenovo.png);
+    width: 108px;
+    height: 32px;
+}
+    
+.main-ul__img-two {
+    background-image: url(Images/samsung.png);
+    width: 116px;
+    height: 38.52px;
+}
+    
+.main-ul__img-three {
+    background-image: url(Images/apple.png);
+    width: 44px;
+    height: 44px;
+}
+    
+.main-ul__img-four {
+    background-image: url(Images/ViewSonic.png);
+    width: 128px;
+    height: 21px;
+}
+    
+.main-ul__img-five {
+    background-image: url(Images/bosch.png);
+    width: 128px;
+    height: 28.6px;
+}
+    
+.main-ul__img-six {
+    background-image: url(Images/hp.png);
+    width: 52px;
+    height: 52px;
+}
+    
+.main-ul__img-seven {
+    background-image: url(Images/acer.png);
+    width: 94px;
+    height: 24px;
+    }
+    
+.main-ul__img-eight {
+    background-image: url(Images/sony.png);
+    width: 128px;
+    height: 25.6px;
+}
+
+.main-ul__img-nine {
+    background-image: url(Images/lenovo.png);
+    width: 108px;
+    height: 32px;
+}
+
+.main-ul__img-ten {
+    background-image: url(Images/samsung.png);
+    width: 116px;
+    height: 38.52px;
+}
+
+.main-ul__img-eleven {
+    background-image: url(Images/apple.png);
+    width: 44px;
+    height: 44px;
+}
+
+.main-block__read-more {
+    display: flex;
+    background: none;
+    border: none;
+    padding: 0 0 34px 0;
+    align-items: center;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+}
+
+
+
+.main-block__read-more::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(Images/expand.svg);
+    margin-left: 31px;
+    margin-right: 8px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.main-block__read-more-rotated::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(Images/expand.svg);
+    margin-left: 31px;
+    margin-right: 8px;
+    transform: rotate(180deg);
+}
+
+
+
+
+
+@media (max-width: 1120px) {
+.main-block__nav {
+    padding: 0 3.13% 0 3.13%;
+    box-sizing: border-box;
+}
+             
+.main-block__ul {
+    max-width: 990px; 
+    justify-content: space-between;
+}
+
+.main-ul__li {
+    max-width: 224px;
+    margin-right: 3.33%;
+}
+
+.main-ul__li:nth-child(4n) {
+    display: none;
+}
+
+.main-ul__li:nth-child(3),
+.main-ul__li:nth-child(7) {
+    margin: 0;
+}
+}
+
+
+
+@media (max-width: 768px) {
+.header-block__container {
+    padding: 16px 0 16px 5%;
+    max-width: 767px;
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100%;
+}
+
+.header-block__text {
+    padding: 0;  
+    max-width: 100%;
+}
+
+.main-block__nav {
+    padding: 0 16px 0 16px;
+}
+
+.main-block__nav::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 24px;
+    height: 81px;
+    background-image: url(Images/fade.svg);
+    z-index: 1;
+}
+
+.main-block__ul {
+    flex-wrap: nowrap;
+    /* не нашел пока другого способа как сместить пагинацию, кроме padding на 32 */
+    padding: 16px 0 32px 0;
+    margin: 0;
+}
+
+.main-ul__li {
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+.swiper-slide {
+    width: auto;
+}    
+
+.main-block__link {
+    width: 240px;
+}
+
+.main-ul__li:nth-child(4n) {
+    display: flex;
+    margin-right: 0;
+}   
+
+.main-ul__li:nth-child(3), .main-ul__li:nth-child(7) {
+    margin: 0;
+}
+   
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom {bottom: 0;}
+.swiper-pagination-bullet  {
+    width: 12px;
+    height: 12px;
+    background: #DDDDDD;
+}
+
+.swiper-pagination-bullet-active {
+    background: #B5B6BC;
+}
+
+.main-block__read-more {
+    display: none;
+}   
+}
+    
+   

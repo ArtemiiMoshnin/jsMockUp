@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel= "stylesheet" href="css/normalize.css">
+    <link rel = "stylesheet" href="css/style.css">
+    <title>jsMockUp</title>
+</head>
+<body>
+    <header class = "header-block">
+        <div class ="header-block__container">
+            <p class = "header-block__text">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</p>
+        </div>   
+    </header>
+    <main class = "main-block">
+        <nav class = "main-block__nav swiper">
+            <ul class = "main-block__ul main-ul swiper-wrapper">
+                <li class = "main-ul__li swiper-slide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-one"></div><div class="main-ul__go"></div></a></li>
+                <li class = "main-ul__li swiper-slide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-two"></div><div class="main-ul__go"></div></a></li>
+                <li class = "main-ul__li swiper-slide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-three"></div><div class="main-ul__go"></div></a></li>
+                <li class = "main-ul__li swiper-slide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-four"></div><div class="main-ul__go"></div></a></li>
+                <li class = "main-ul__li swiper-slide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-five"></div><div class="main-ul__go"></div></a></li>
+                <li class = "main-ul__li swiper-slide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-six"></div><div class="main-ul__go"></div></a></li>
+                <li class = "main-ul__li swiper-slide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-seven"></div><div class="main-ul__go"></div></a></li>
+                <li class = "main-ul__li swiper-slide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-eight"></div><div class="main-ul__go"></div></a></li>
+
+                <li class = "main-ul__li swiper-slide hide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-nine"></div><div class="main-ul__go"></div></a></li>
+                <li class = "main-ul__li swiper-slide hide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-ten"></div><div class="main-ul__go"></div></a></li>
+                <li class = "main-ul__li swiper-slide hide"><a href ="#" class = "main-block__link"><div class = "main-ul__img-eleven"></div><div class="main-ul__go"></div></a></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </nav>
+        <button type = "button" class="main-block__read-more">Показать все</button>
+    </main>
+    <template id = "li-template">
+        <li class = "new-li">
+            <a href ="#" class = "new-li__link">
+                <div class = "new-li__img"></div>
+            </a>
+        </li>
+      </template>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="js/core.js"></script>
+</body>
+</html>
